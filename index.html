@@ -89,6 +89,9 @@
             */
       
             const changeFooterText = function () {
+                let footChange = document.getElementById("foot")
+                footChange.innerText = "Change text"
+
               //
             };
       
@@ -154,9 +157,8 @@
           />
         </div>
       </main>
-  
-      <footer>
-        <p>And this text is just for the exercise too!</p>
+      <footer id="foot">
+        <p onclick="changeFooterText()">And this text is just for the exercise too!</p>
       </footer>
     </body>
   </html>
